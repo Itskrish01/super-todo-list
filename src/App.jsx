@@ -64,10 +64,7 @@ function App() {
           alt="image"
         />
       )}
-      <Toaster 
-        position="bottom-right"
-        reverseOrder={false} 
-      />
+      <Toaster position="bottom-right" reverseOrder={false} />
       <Header />
       <Input />
       <Todos />

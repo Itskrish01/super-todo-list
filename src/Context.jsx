@@ -96,7 +96,8 @@ const ThemeProvider = ({ children }) => {
     AddTodo,
     DeleteTodo,
     SetCompleted,
-    ClearCompleted
+    ClearCompleted,
+    setTodos
   };
 
   return (
