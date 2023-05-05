@@ -204,7 +204,7 @@ const Todos = () => {
       </div>
 
       <h5 className="text-center text-base mt-14 dark:text-[#4d5066] text-[#41435c63] font-semibold">
-        Drag and drop to reorder list
+        Drag and drop to reorder list (For All only)
       </h5>
     </>
   );
