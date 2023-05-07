@@ -6,6 +6,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+* {
+  transition: 0.3s;
+}
+
 .checkbox-wrapper-18 .round {
   position: relative;
 }

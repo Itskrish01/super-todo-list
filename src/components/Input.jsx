@@ -1,41 +1,45 @@
 import React, { useContext, useState } from "react";
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from "uuid";
 import { ThemeContext } from "../Context";
 
 const Input = () => {
-  const {AddTodo} = useContext(ThemeContext)
+  const { AddTodo } = useContext(ThemeContext);
   const unique_id = uuid();
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(false);
   const [todoData, setTodoData] = useState({
     id: "",
     todo_name: "",
     completed: false,
-  })
+  });
 
   const handleChange = (e) => {
     setTodoData({
       completed: checked,
       id: unique_id,
-      todo_name: e.target.value
-    })
-  }
+      todo_name: e.target.value,
+    });
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    await AddTodo(todoData)
+    e.preventDefault();
+    await AddTodo(todoData);
 
     setTodoData({
       completed: "",
       id: "",
-      todo_name: ""
-    })
-  }
+      todo_name: "",
+    });
+  };
 
   return (
     <div className="mt-10 bg-white sm:px-5 sm:py-4 px-6 py-5 shadow-2xl rounded-md flex gap-6 items-center dark:bg-[#25273c]">
       <div className="checkbox-wrapper-18">
         <div className="round ">
-          <input type="checkbox" onChange={(e) => setChecked(e.target.checked)} id="checkbox-18" />
+          <input
+            type="checkbox"
+            onChange={(e) => setChecked(e.target.checked)}
+            id="checkbox-18"
+          />
           <label
             htmlFor="checkbox-18"
             className="dark:bg-[#2a2c43] border dark:border-[#cccccc43] border-[#13065a43] bg-white"

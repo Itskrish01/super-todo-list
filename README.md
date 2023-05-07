@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Itskrish01/super-todo-list)
-- Live Site URL: [Add live site URL here](https://super-todo-list-itskrish01.netlify.app/)
+- Solution URL: [Here](https://github.com/Itskrish01/super-todo-list)
+- Live Site URL: [Here](https://super-todo-list-itskrish01.netlify.app/)
 
 ### Built with
 

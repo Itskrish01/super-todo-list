@@ -79,7 +79,7 @@ const Todos = () => {
           )}
         </DragDropContext>
         {tab === "Active" && (
-          <div className="bg-white rounded-md dark:bg-[#25273c]">
+          <div className="bg-white pt-1 rounded-md dark:bg-[#25273c]">
             {uncompletedTodos.length === 0 && (
               <h4 className="text-center py-5 border-b-[1px] dark:border-[#4d50668b] border-[#9ba2dd51] text-2xl dark:text-[#cacde8] text-[#4d5066]">
                 No work to do!
@@ -109,7 +109,7 @@ const Todos = () => {
         )}
 
         {tab === "Completed" && (
-          <div className="bg-white rounded-md dark:bg-[#25273c]">
+          <div className="bg-white pt-1 rounded-md dark:bg-[#25273c]">
             {completedTodos.length === 0 && (
               <h4 className="text-center py-5 border-b-[1px] dark:border-[#4d50668b] border-[#9ba2dd51] text-2xl dark:text-[#cacde8] text-[#4d5066]">
                 No work has done!
