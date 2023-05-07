@@ -20,8 +20,13 @@ Users should be able to:
 
 ### Links
 
+<<<<<<< HEAD
 - Solution URL: [Here](https://github.com/Itskrish01/super-todo-list)
 - Live Site URL: [Here](https://super-todo-list-itskrish01.netlify.app/)
+=======
+- Solution URL: [here](https://github.com/Itskrish01/super-todo-list)
+- Live Site URL: [here](https://super-todo-list-itskrish01.netlify.app/)
+>>>>>>> c798a808c84329ea2e3f89ae890b29e24238b573
 
 ### Built with
 

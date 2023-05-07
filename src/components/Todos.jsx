@@ -8,14 +8,6 @@ const Todos = () => {
   const { todosList, ClearCompleted, setTodos } = useContext(ThemeContext);
   const [tab, setTab] = useState("All");
 
-  const [filteredTodos, setFilteredTodos] = useState(
-    todosList.filter((item) => !item.completed)
-  );
-
-  const [filteredTodos1, setFilteredTodos1] = useState(
-    todosList.filter((item) => item.completed)
-  );
-
   function handleDragEnd(result) {
     if (!result.destination) {
       return;
@@ -26,8 +18,6 @@ const Todos = () => {
     newItems.splice(result.destination.index, 0, removedItem);
 
     setTodos(newItems);
-    setFilteredTodos(newItems.filter((item) => !item.completed));
-    setFilteredTodos1(newItems.filter((item) => item.completed));
   }
 
   const uncompletedTodos = todosList.filter((todo) => !todo.completed);
